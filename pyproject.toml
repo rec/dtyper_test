@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dtyper_test"
+version = "0.0.1"
+description = "test dtyper"
+authors = ["Tom Ritchford <tom@swirly.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+dtyper = "*"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "*"
+pylint = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
